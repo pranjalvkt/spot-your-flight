@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+# Spot Your Flight
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Spot Your Flight is a real-time application designed to keep you updated on flight statuses, including delays, cancellations, and gate changes. With support for push notifications via SMS, email, or app notifications using Firebase Cloud Messaging, you can stay informed about your flight details effortlessly.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Real-time Updates**: Display current flight status, including delays, cancellations, and gate changes.
+- **Push Notifications**: Receive notifications for flight status changes via SMS, email, or app notifications using Firebase Cloud Messaging.
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: HTML, CSS, React.js
+- **Backend**: Node.js
+- **Database**: MongoDB
+- **Notifications**: Firebase Cloud Messaging
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get Spot Your Flight up and running on your local machine, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure you have the following installed:
+- Node.js (for running the backend)
+- MongoDB (for the database)
+- npm or yarn (for managing packages)
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    git clone https://github.com/pranjalvkt/spot-your-flight.git
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Navigate into the project directory:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    cd spot-your-flight
+    ```
 
-## Learn More
+3. **Install backend dependencies:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd backend
+    npm install
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Install frontend dependencies:**
 
-### Code Splitting
+    ```bash
+    cd ../frontend
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Set up environment variables:**
 
-### Analyzing the Bundle Size
+    - Copy `.env.example` to `.env` in both `frontend` and `backend` directories.
+    - Configure Firebase Cloud Messaging and MongoDB connection details in the `.env` files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+6. **Start the MongoDB server:**
 
-### Making a Progressive Web App
+    ```bash
+    mongod
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+7. **Run the backend server:**
 
-### Advanced Configuration
+    ```bash
+    cd ../backend
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+8. **Run the frontend application:**
 
-### Deployment
+    ```bash
+    cd ../frontend
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Usage
 
-### `npm run build` fails to minify
+Once everything is set up, you can access the application via `http://localhost:3000`. The frontend will display real-time flight statuses, and you will receive notifications based on your settings.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Testing
+
+Run tests using the following commands in both `frontend` and `backend` directories:
+
+```bash
+# For frontend
+npm test
+
+# For backend
+npm test
+```
+
+## Contributing
+
+We welcome contributions to improve Spot Your Flight. To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature/your-feature`).
+6. Open a pull request.
+
+### Code of Conduct
+
+Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) while contributing.
+
+### Pull Request Process
+
+1. Ensure your code passes existing tests.
+2. Write clear commit messages and pull request descriptions.
+3. Request a review from one of the maintainers.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or support, you can reach out to:
+
+- **Pranjal Tripathi** - [pranjalvktripathi@gmail.com](mailto:pranjalvktripathi@gmail.com)
+- **GitHub**: [github.com/pranjalvkt](https://github.com/pranjalvkt)
